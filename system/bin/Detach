@@ -113,7 +113,7 @@ ps_accounts=$("$MAGMOD/sqlite" $PS_DATA_PATH "SELECT account FROM ownership" | s
 ps_accounts_final=$((ps_accounts+1))
 
 cat /dev/null > "$instant_run"
-echo -e "PLAY_DB_DIR=/data/data/com.android.vending/databases\nSQLITE=$MAGMOD\n\n\nam force-stop com.android.vvending\n\ncd \$SQLITE\nsleep 1\n" >> "$instant_run"
+echo -e "PLAY_DB_DIR=/data/data/com.android.vending/databases\nSQLITE=$MAGMOD\n\n\ncd \$SQLITE\nsleep 1\n" >> "$instant_run"
 
 #egrep "^[[:space:]]*$SQLITE/sqlite" "$SERVICESH" >> "$instant_run"
 sed -n '/^[[:space:]]*$SQLITE\/sqlite.*/p' "$SERVICESH" >> "$instant_run"
