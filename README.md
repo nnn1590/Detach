@@ -1,14 +1,15 @@
 <p align="center">
 <h2 align=center> Detach </h3>
 
-<p align="center"><img width="320" height="320" src="https://i.ibb.co/J2kbHSp/photo-2021-05-24-05-09-23.jpg"></p>
+<p align="center"><img width="320" height="320" src="https://user-images.githubusercontent.com/20888017/124083428-2223ae00-da4e-11eb-9c7d-bff258c416cf.jpeg"></p>
+
 
 <p align="center">
  <a href="https://forum.xda-developers.com/android/software-hacking/mod-detach-market-links-theme-ready-apps-t3447494"><img src="https://img.shields.io/badge/XDA-Thread-yellow.svg?longCache=true&style=flat-square"></a><br />
  <a href=https://t.me/Detach_gms_apps><img src="https://img.shields.io/badge/Telegram-Channel-blue.svg?longCache=true&style=flat-square"></a></p><br />
 
 <h3 align=center>Introduction</h3>
-<h4 align=center><b>INFO:</b>This Module is a port of the original MOD created by hinxnz - <a href="https://forum.xda-developers.com/member.php?u=1909299">XDA thread/OP</a> to work as a Magisk module for Android, so all credits to him. :+1:<h4>
+<h4 align=center><b>INFO: </b>This Module is a port of the original MOD created by hinxnz - <a href="https://forum.xda-developers.com/member.php?u=1909299">XDA thread/OP</a> to work as a Magisk module for Android, so all credits to him. :+1:<h4>
 <br />
  
 <h4>:information_source: Short explanation:</h4>
@@ -22,10 +23,11 @@ NOTE BEFORE INSTALL: DON'T FLASH THIS MODULE IN TWRP. USE MAGISK MANAGER ONLY TO
 <b><h3>:scroll: Setup steps:</h3></b>
 - Start by downloading the <a href="https://raw.githubusercontent.com/sobuj53/Detach/master/Detach.txt">Detach.txt</a> file to your `/sdcard/` folder: <a href="https://raw.githubusercontent.com/sobuj53/Detach/master/Detach.txt">Detach.txt</a>
   - (equivalent to `/storage/emulated/0/`)
-- Uncomment the common app(s) you want in this file
+- Remove the `#` symbol just before the application(s) name(s) you want in this file
+- Follow the next `Bonus` section if you want to detach other application(s) wich aren't in the list
 - Save changes
-- Flash the module ZIP with Magisk Manager
-  - Magisk Manager app is required for the flash
+- Install with Magisk app
+  - Magisk app is required for the module setup
 - Reboot your device.
 - Profit!
 <br />
