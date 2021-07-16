@@ -112,7 +112,7 @@ ps_accounts=$("$MAGMOD/sqlite" $PS_DATA_PATH "SELECT account FROM ownership" | s
 ps_accounts_final=$((ps_accounts+1))
 
 cat /dev/null > "$instant_run"
-echo -e "PLAY_DB_DIR=/data/data/com.android.vending/databases\nSQLITE=$MAGMOD\n\n\nam force-stop com.android.vending\n\ncd \$SQLITE\nsleep 1\n" >> "$instant_run"
+echo -e "PLAY_DB_DIR=/data/data/com.android.vending/databases\nSQLITE=$MAGMOD\n\n\nam force-stop com.android.vvending\n\ncd \$SQLITE\nsleep 1\n" >> "$instant_run"
 
 #egrep "^[[:space:]]*$SQLITE/sqlite" "$SERVICESH" >> "$instant_run"
 sed -n '/^[[:space:]]*$SQLITE\/sqlite.*/p' "$SERVICESH" >> "$instant_run"
@@ -161,7 +161,7 @@ if grep -q "$wrong_result" "$MAGMOD/first_detach_result.txt"; then
 	cp -f "$ACTAPPS" "$ACTAPPSBCK"
 	var_ACTAPPS=$(awk '{ print }' "$ACTAPPSBCK")
 	
-	am force-stop com.android.vending
+	#am force-stop com.android.vending
 	
 	FIRST_PCK_NAME=$(head -n 1 "$ACTAPPS")
 	PRESENT_DIR=$(pwd)
@@ -195,7 +195,7 @@ else
 	echo -e $G"\nDone\n"$N
 fi
 
-am force-stop com.android.vending
+#am force-stop com.android.vending
 
  for r in "$instant_run_two" "$ACTAPPS" "$ACTAPPSBCK" "$FINAL" "$MAGMOD/first_detach_result.txt"; do rm -f "$r"; done
 rm -f "$MAGMOD/SYN_CONF.txt"
